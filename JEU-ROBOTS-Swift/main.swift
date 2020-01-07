@@ -39,7 +39,7 @@ tableauDeRobot[nombreRobot].introduce()
 
 }
 
-//Les robots se déplacent dans tous les sens 
+//Les robots se déplacent dans tous les sens
 var position : (Int,Int)
 var position1 : (Int,Int)
 var position2 : (Int,Int)
@@ -61,3 +61,11 @@ print("\(position3)")
 position3 = monGentilRobot3.moveBack(vitesse : -3)
 print("\(position3)")
 position2 = monGentilRobot2.moveRight(vitesse: 4)
+
+//Les robots ont bougé et annoncent leur position
+var robot : Robot
+for robot in tableauDeRobot{
+    robot.introduce()
+}
+// en mouvement brownien
+
