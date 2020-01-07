@@ -67,5 +67,9 @@ var robot : Robot
 for robot in tableauDeRobot{
     robot.introduce()
 }
+print("Déplacement aléatoire \n\n")
 // en mouvement brownien
-
+print("Déplacement aléatoire \n\n")
+var rob : Robot
+for rob in tableauDeRobot {rob.position = (Int.random(in: 1..<15), Int.random(in: 1..<15))
+rob.introduce()}
