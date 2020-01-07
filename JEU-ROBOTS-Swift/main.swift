@@ -39,7 +39,7 @@ tableauDeRobot[nombreRobot].introduce()
 
 }
 
-//Les robots se déplacent
+//Les robots se déplacent dans tous les sens 
 var position : (Int,Int)
 var position1 : (Int,Int)
 var position2 : (Int,Int)
@@ -54,9 +54,10 @@ var positionRobot4 : (Int,Int) = monGentilRobot4.moveForward(vitesse : 5)
 print("\(positionRobot4)")
 positionRobot4 = monGentilRobot4.moveForward(vitesse : 2)
 print("\(positionRobot4)")
-position2 = monGentilRobot2.moveForward(vitesse : monGentilRobot2.vitesse)
-position3 = monGentilRobot3.moveForward(vitesse : monGentilRobot3.vitesse)
+position2 = monGentilRobot2.moveForward(vitesse : 3)
+position3 = monGentilRobot3.moveForward(vitesse : 7)
 print("\(position2)")
 print("\(position3)")
-position3 = monGentilRobot3.moveBack(vitesse : monGentilRobot3.vitesse)
+position3 = monGentilRobot3.moveBack(vitesse : -3)
 print("\(position3)")
+position2 = monGentilRobot2.moveRight(vitesse: 4)
